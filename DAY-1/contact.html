@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <meta name="title" content="Prnewswire" />
+    <meta
+      name="description"
+      content="Contact and address informations of PrNewswire."
+    />
+    <meta name="keywords" content="contact,mobile,email" />
+    <meta name="author" content="John Doe" />
+    <link rel="canonical" href="https://www.prnewswire.com/news-releases/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="PR Newswire providing multimedia press releases"
+    />
+    <meta
+      property="og:url"
+      content="https://www.prnewswire.com/news-releases/"
+    />
+    <meta property="og:image" content="https://picsum.photos/id/10/1200/630" />
+    <meta
+      property="og:description"
+      content="Raise your issues and concerns regarding PrNewswire here"
+    />
+    <meta property="og:site_name" content="Contact" />
+    <link rel="stylesheet" href="base.css" type="text/css" />
+    <link rel="stylesheet" href="layout.css" type="text/css" />
+    <link rel="stylesheet" href="components.css" type="text/css" />
+    <link rel="stylesheet" href="pages.css" type="text/css" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <style>
+      :root {
+        --bg-color: white;
+        --text-color: #121212;
+      }
+      body {
+        background-color: var(--color-bg);
+        background-color: var(--color-text);
+      }
+      .dark-theme {
+        background-color: #121212;
+        color: white;
+      }
+      body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <button id="toggle-button" onclick="myButton()">Toggle dark mode</button>
+      <br />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="services.html">Services</a>
+      </nav>
+      <h1>Contact Details</h1>
+      <div class="form5">
+        <form>
+          <div class="floating">
+            <input type="text" id="name" class="required" required />
+            <label for="name">Enter Name*:</label>
+          </div>
+          <div class="floating">
+            <input type="email" id="mailId" class="required" required />
+            <label for="mailId">Enter Mail ID*:</label>
+          </div>
+
+          <div class="floating">
+            <input type="tel" id="phone" class="required" required />
+            <label for="phone">Enter Mobile*:</label>
+          </div>
+          <div class="floating1">
+            <label for="department">Enter Department:*</label>
+            <select name="department" id="department" class="required" required>
+              <option value="Human Resource">Human Resource</option>
+              <option value="Finance">Finance</option>
+              <option value="Technology">Technology</option>
+              <option value="Media">Media</option>
+            </select>
+          </div>
+          <div class="floating">
+            <textarea id="comments"></textarea>
+            <label for="comments">Enter your comments:</label>
+          </div>
+          <div class="floating1">
+            <label for="newsLetter">Send News letter</label>
+            <input
+              type="checkbox"
+              id="newsLetter"
+              value="newsLetter"
+              class="check5"
+            />
+          </div>
+
+          <input type="submit" />
+          <br />
+          <br />
+        </form>
+      </div>
+      <div class="map">
+        <iframe
+          title="Google Map Showing Chicago,Illinois"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380514.6267536834!2d-88.06152172494062!3d41.833239303261166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sin!4v1780996969530!5m2!1sen!2sin"
+          width="300"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <br />
+      <br />
+      <address>
+        call PR NewsWire at :<a href="tel:8887760942">8887760942</a>
+        <br />
+        Email:<a href="mailto:privacy@cision.com">mailto:privacy@cision.com</a>
+        <br />
+        300 S Riverside Plaza in Chicago,Illinois,USA
+      </address>
+      <br />
+      <br />
+      <footer>
+        <span>Copyright © 2026-2028 TermsFeed®. All rights reserved. </span>
+      </footer>
+    </main>
+    <script src="dark-mode.js"></script>
+  </body>
+</html>

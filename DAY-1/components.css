@@ -1,0 +1,214 @@
+.column2 {
+  display: grid;
+  row-gap: 10px;
+}
+
+.copy {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.timeline {
+  display: flex;
+  row-gap: 40px;
+}
+
+dl dt::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: solid;
+}
+
+dl dd::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: solid;
+}
+
+dl {
+  position: relative;
+}
+
+dl dt::after {
+  position: absolute;
+  left: -5px;
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.about-test {
+  background-color: cornflowerblue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 200;
+  height: 80px;
+  width: 400px;
+  text-align: center;
+  margin: 40px;
+}
+
+.quote {
+  font-size: larger;
+}
+
+.about2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 80px;
+}
+
+.history2 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  height: 60px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(182 179 179);
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table td:nth-child(4),
+table th:nth-child(4) {
+  background-color: rgb(221 116 169);
+}
+
+.icon {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.card {
+  box-shadow:
+    0 4px 6px -1px rgb(106 230 5 / 10%),
+    0 2px 4px -1px rgb(4 147 172 / 6%);
+  transition: transform 1s ease-in-out;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 40px;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow:
+    0 20px 25px -5px rgb(4 226 41 / 10%),
+    0 10px 10px -5px rgb(163 5 116 / 4%);
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  margin: 30px 0;
+  margin-left: 10px;
+  gap: 30px;
+}
+
+#filter1 {
+  display: none;
+}
+
+#filter2 {
+  display: none;
+}
+
+#filter1:target {
+  display: block;
+}
+
+#filter2:target {
+  display: block;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.form5 {
+  border: 1px solid black;
+}
+
+.floating {
+  position: relative;
+}
+
+.floating label {
+  position: absolute;
+  left: 4px;
+  transition: all 0.2s ease;
+  font-size: 18px;
+}
+
+.floating input:focus ~ label {
+  top: -15px;
+  font-size: 14px;
+}
+
+.floating textarea:focus ~ label {
+  top: -15px;
+  font-size: 14px;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+}
+
+/* .check5{
+         width: 80px !important; 
+        height: 20px !important;
+    } */
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(3 3 48);
+  background-color: aqua;
+}
+
+input[type="checkbox"]:checked {
+  border: 3px solid brown;
+  background-color: chocolate;
+}
+
+select {
+  appearance: none;
+  width: 150px;
+  height: 20px;
+}
+
+select:focus {
+  background-color: rgb(162 224 224);
+}
+
+iframe {
+  border-radius: 50%;
+}
+
+.map {
+  padding: 20px;
+}
+
+.required:user-invalid {
+  border: 5px solid red;
+}
