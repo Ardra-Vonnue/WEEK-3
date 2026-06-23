@@ -60,18 +60,23 @@
         <button id="toggle-button" onclick="myButton()">Toggle dark mode</button>
       <h1>Our Team</h1>
       <br />
-      <nav id="nav4">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="team.html" aria-current="page">Team</a>
-        <a href="contact.html">Contact</a>
-        <a href="services.html">Services</a>
-      </nav>
-      <div class="filter">
-        <a href="#filter1">Global Leadership Team</a>
-        <a href="#filter2">Finance and Human Resource Team</a>
-      </div>
-
+      <nav >
+         <button onclick="showDrawer()" class="icon" >
+          <img 
+            src="https://img.icons8.com/?size=100&id=8113&format=png&color=000000"
+            alt="Hamburger logo"
+            
+          />
+         </button>
+        <div class="drawer">
+          <a href="./index.html" aria-current="page">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./team.html">Team</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./services.html">Services</a>
+          </div>
+          
+        </nav>
       <section id="filter1">
         <h2>Global Leadership Team :</h2>
         <div class="teams1">
@@ -477,6 +482,6 @@
         <span>Copyright © 2026-2028 TermsFeed®. All rights reserved. </span>
       </footer>
     </main>
-      <script src="dark-mode.js"></script>
+      <script src="drawer.js"></script>
   </body>
 </html>
