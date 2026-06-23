@@ -27,6 +27,7 @@
       content="PR NewsWire Providing multiple press releases ,investor relations and discloures and comapny newsws all at a finger tip"
     />
     <meta property="og:site_name" content="Home" />
+     
     <link rel="stylesheet" href="base.css" type="text/css" />
     <link rel="stylesheet" href="layout.css" type="text/css" />
     <link rel="stylesheet" href="components.css" type="text/css" />
@@ -55,26 +56,40 @@
     </style>
   </head>
   <body>
+    
     <main>
       <button id="toggle-button" onclick="myButton()">Toggle dark mode</button>
       <div class="page">
-        <nav>
+        <nav >
+         <button onclick="showDrawer()" class="icon" >
+          <img 
+            src="https://img.icons8.com/?size=100&id=8113&format=png&color=000000"
+            alt="Hamburger logo"
+            
+          />
+         </button>
+        <div class="drawer">
           <a href="./index.html" aria-current="page">Home</a>
           <a href="./about.html">About</a>
           <a href="./team.html">Team</a>
           <a href="./contact.html">Contact</a>
           <a href="./services.html">Services</a>
+          </div>
+          
         </nav>
+        <!-- <div class="drawer">
+          <a href="./index.html" aria-current="page">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./team.html">Team</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./services.html">Services</a>
+          </div> -->
         <h1>PR NewsWire</h1>
 
         <div class="row">
           <div class="column">
             <h2>News In Focus</h2>
-            <p>
-              <a href="#news1">News Releases</a>
-              <a href="#news2">Trending topics</a>
-              <a href="#news3">Science and Tech</a>
-            </p>
+            
           </div>
           <div class="column">
             <h3>Dive In</h3>
@@ -165,6 +180,6 @@
         </footer>
       </div>
     </main>
-    <script src="dark-mode.js"></script>
+   <script src="drawer.js"></script>
   </body>
 </html>

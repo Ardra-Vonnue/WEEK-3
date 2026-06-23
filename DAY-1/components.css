@@ -85,14 +85,11 @@ table td:nth-child(4),
 table th:nth-child(4) {
   background-color: rgb(221 116 169);
 }
+.icon{
+  height: 50px;
+  width: 50px;
+  display: flex;
 
-.icon {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.icon:hover {
-  opacity: 1;
 }
 
 .card {
@@ -140,9 +137,7 @@ table th:nth-child(4) {
   display: block;
 }
 
-img {
-  border-radius: 50%;
-}
+
 
 .form5 {
   border: 1px solid black;
@@ -211,4 +206,19 @@ iframe {
 
 .required:user-invalid {
   border: 5px solid red;
+}
+.drawer {
+  display: none;
+
+}
+.drawer{
+  border: 3px solid black;
+  gap: 10px;
+}
+.open{
+  display: flex;
+}
+button{
+  background: none;
+  border: none;
 }
