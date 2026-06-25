@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive</title>
+    <style>
+      .card1 {
+        border: 2px solid black;
+        height: 70px;
+      }
+      #check {
+        display: none;
+      }
+      .inner {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in;
+      }
+
+      .open {
+        max-height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>CSS Accordion</h2>
+      <h3>Checkbox input</h3>
+      <div class="card1">
+        <label for="check">Receive Notifications : </label>
+        <input
+          type="checkbox"
+          id="check"
+          class="check1"
+          onclick="expandPanel()"
+          aria-expanded="false"
+        />
+        <div class="inner">This is the content</div>
+      </div>
+      <h3>Radio input</h3>
+      <div class="card2">
+        <label for="radio1">Tab 1</label>
+        <input
+          type="radio"
+          id="radio1"
+          class="check2"
+          name="radio"
+          aria-expanded="false"
+          onclick="expandPanel1()"
+        />
+        <div class="inner1">This is Tab 1</div>
+        <label for="radio2">Tab 2</label>
+        <input
+          type="radio"
+          id="radio2"
+          class="check3"
+          name="radio"
+          aria-expanded="false"
+          onclick="expandPanel2()"
+        />
+        <div class="inner2">This is Tab 2</div>
+      </div>
+      <h3>star rating</h3>
+      <div class="star" onclick="showStar(event)">
+        <span class="star1">&#9734;</span>
+        <span class="star1">&#9734;</span>
+        <span class="star1">&#9734;</span>
+        <span class="star1">&#9734;</span>
+        <span class="star1">&#9734;</span>
+      </div>
+      <button class="toggleBtn">Toggle</button>
+    </main>
+    <script src="accordion.js"></script>
+  </body>
+</html>
